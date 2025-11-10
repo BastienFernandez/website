@@ -1,0 +1,15 @@
+<nav #nav>
+    <a routerLink="/home" routerLinkActive="active" (mouseenter)="onMouseEnterLink($event)"
+        (mouseleave)="onMouseLeaveLink()">
+        Home
+    </a>
+    <a routerLink="/profile" routerLinkActive="active" (mouseenter)="onMouseEnterLink($event)"
+        (mouseleave)="onMouseLeaveLink()">
+        Profile
+    </a>
+    <a routerLink="/contact" routerLinkActive="active" (mouseenter)="onMouseEnterLink($event)"
+        (mouseleave)="onMouseLeaveLink()">
+        Contact
+    </a>
+</nav>
+<div class="underline" [style.left.px]="underlineLeftPosition" [style.width.px]="underlineWidth"></div>
